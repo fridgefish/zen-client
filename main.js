@@ -3,8 +3,6 @@ if(!window.appLoad){
 
     window.appLoad = function(gui) {
         
-        var ace = window.ace;
-        
         var detectedMode;
         
         var Range = ace.require("ace/range").Range;

@@ -21,7 +21,7 @@
     "package:css": "cat css/normalize.css css/skeleton.css css/zen.css > css/bundle.css",
     "compile:js": "uglifyjs js/zen.js > js/zen.min.js",
     "launch": "/opt/nwjs/nw ~/Projects/zen-client/",
-    "compile": "npm run compile:css && npm run package:css && npm run compile:js",
+    "compile": "npm run compile:css && npm run compile:js",
     "claunch": "npm run compile && npm run launch",
     "css": "npm run compile:css && npm run package:css",
     "js": "npm run browser && npm run compile:js"
