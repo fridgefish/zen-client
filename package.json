@@ -1,14 +1,28 @@
 {
-    "name": "Ace File Editor",
+    "name": "ZEN",
+    "description": "The client for ZEN (getzen.io). Keeps your code in sync.",
+    "license": "GNU GPL v3.0",
+    "version": "0.1.0",
     "main": "index.html",
     "window": {
-        "title": "File Editor",
-        "toolbar": false,
-        "position": "center",
-        "width": 800,
-        "height": 700,
-        "resizable": true,
-        "show": false,
-	    "frame": true
+    "width": 960,
+    "height": 500,
+    "toolbar": true
+    },
+    "devDependencies": {
+    "jquery": "latest",
+    "stylus": "latest",
+    "uglify-js": "latest"
+    },
+    "scripts": {
+    "watch:css": "stylus -w css/zen.styl",
+    "compile:css": "stylus -c css/zen.styl",
+    "package:css": "cat css/normalize.css css/skeleton.css css/zen.css > css/bundle.css",
+    "compile:js": "uglifyjs js/zen.js > js/zen.min.js",
+    "launch": "/opt/nwjs/nw ~/Projects/ZEN/",
+    "compile": "npm run compile:css && npm run package:css && npm run compile:js",
+    "claunch": "npm run compile && npm run launch",
+    "css": "npm run compile:css && npm run package:css",
+    "js": "npm run browser && npm run compile:js"
     }
 }
