@@ -25,7 +25,7 @@ if(!window.appLoad){
             win.currentFile = filename;
         }
         
-        var editor = ace.edit("editor");
+        var editor = ace.edit("zen-editor");
         
         editor.commands.addCommand({
             name: 'beautify',
@@ -273,7 +273,7 @@ if(!window.appLoad){
         }
     
         $("#newFile").click(function() {
-            if (confirm("All Changes will be lost?")) {
+            if (confirm("If you make a new file, you'll use all your unsaved changes.")) {
                 openFile();
             }
         });
