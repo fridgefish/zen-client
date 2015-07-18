@@ -1,7 +1,25 @@
+var tabs = require("./js/tab.js");
+
 if(!window.appLoad){
     var appconfig = require("./package.json");
 
     window.appLoad = function(gui) {
+
+        tabs.create("GameLoaderDynamic.js");
+        tabs.create("DynamicGameLoader.js");
+        tabs.create("index.html");
+        tabs.close(3);
+
+        $('.nav li a').click(function(e) {
+
+        $('.nav li').removeClass('active');
+
+        var $parent = $(this).parent();
+        if (!$parent.hasClass('active')) {
+            $parent.addClass('active');
+        }
+        e.preventDefault();
+    });
         
         var detectedMode;
         

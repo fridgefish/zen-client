@@ -14,11 +14,8 @@
 
     <!-- Tabs -->
      <ul class="nav nav-tabs">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Menu 1</a></li>
-    <li><a href="#">Menu 2</a></li>
-    <li><a href="#">Menu 3</a></li>
-  </ul>
+    
+     </ul>
 
     <div id="zen-editor"></div>
 
@@ -68,6 +65,19 @@
 </div>
         <script src="js/ace/ace.js"></script>
         <script src="main.js"></script>
+
+        <script>
+             $('.nav li a').click(function(e) {
+
+        $('.nav li').removeClass('active');
+
+        var $parent = $(this).parent();
+        if (!$parent.hasClass('active')) {
+            $parent.addClass('active');
+        }
+        e.preventDefault();
+    });
+        </script>
 
         <script>
             (function(){
