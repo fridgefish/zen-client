@@ -1,29 +1,8 @@
-node-webkit-ace-editor
+ZEN
 ======================
 
-This is a Basic Text Editor(made for quick changes when your not on c9.io)
+The idea behind ZEN is that your code syncs across all platforms, instantly, and that it is easy to collaborate with other people (you can see what they type). 
 
-Features in node-webkit-ace-editor
+You can also set goals with ZEN to keep track of how you're coding.
 
-*   Highlighting
-*   Themes
-*   jsbeautify  (ctrl+shift+b)
-
-Bootstrap was useful for creating the Top App Navigation.
-
-includes jquery
-
-[ace for webpages](http://ace.ajax.org/#nav=about)
-
-----
-
-To run: Download `node-webkit` @ https://github.com/rogerwang/node-webkit
-
-Its best if you [build this app](https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps) using `node-webkit` package builder.
-
-This source is ready to build..  follow building instruction from above link
-
-
-enjoy - Bradley Matusiak - bmatusiak@gmail.com
-
-Star this project @ github https://github.com/brads-tools/node-webkit-ace-editor/stargazers
+ZEN is designed to be clutter-free, with a large code font size so you can focus on your code.
