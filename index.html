@@ -1,21 +1,12 @@
 <html>  
     <head>
-		<title>Ace Editor</title>
-		<style>
-		  #editor { 
-			position: absolute;
-			top: 26px;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			}
-		</style>
-		<script src="ace/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+		<title>ZEN</title>
+		<script src="js/ace/ace.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 		<!-- Bootstrap -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    	<script src="jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
         
 	</head>
 	<body style="-webkit-user-select: none; -webkit-app-region: drag">
@@ -75,8 +66,9 @@
 				</ul>
 			</div>
 		</div>
-		<div id="editor"></div>
+		<div id="editor">// Your coding adventure begins here!</div>
         <script src="main.js"></script>
+
         <script>
             (function(){
                 var gui = require('nw.gui');

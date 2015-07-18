@@ -1,5 +1,6 @@
 if(!window.appLoad){
     var appconfig = require("./package.json");
+
     window.appLoad = function(gui) {
         
         var ace = window.ace;
